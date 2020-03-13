@@ -1,0 +1,41 @@
+package Polymorphism;
+class Arithmetic
+{
+	public int add (int x,int y)
+	{
+		return x+y;
+		}
+	//overload add method with number of parameters
+	public int add(int x,int y,int z)
+	{
+		return x+y+z;
+	}
+//overload add amethod with the type of parameters
+public float add(float a, float b)
+{
+	return a+b;
+}
+
+	public float add(float x, float y,float z)
+	{
+		return x+y+z;
+	}
+}
+public class Addingdemo{
+	public static void main (String args[]){
+		//create object
+		Arithmetic a=new Arithmetic();
+		int intsum=a.add(5493,247);
+		float floatsum=a.add(5.23f,7.145f,5.123f);
+		float totaloftwo=a.add(5.45f,7.23f);
+		
+		System.out.println("Integer sum="+intsum);
+		System.out.println("Float sum="+floatsum);
+		System.out.println("Integer sumof two numbers="+totaloftwo);
+	}
+
+} 
+		
+
+
+
